@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/tus.min.js"></script>
+<script src="~/js/upload.js"></script>
+
+<div class="form-horizontal" style="margin-top:80px;">
+    <div class="form-group" id="progress-group" style="display:none;">
+        <div id="size"></div>
+        <div class="progress">
+            <div id="progress" class="progress-bar progress-bar-success progress-bar-animated progress-bar-striped" role="progressbar"
+                 aria-valuemin="0" aria-valuemax="100">
+                <span id="percentage"></span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input name="file" id="file" type="file" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" id="submit" value="上传" class="btn btn-success" />
+            <input type="button" id="pause" value="暂停" class="btn btn-danger" />
+            <input type="button" id="continue" value="继续" class="btn btn-info" />
+        </div>
+    </div>
+</div>
+
